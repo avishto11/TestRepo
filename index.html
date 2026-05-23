@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CloudYantra Technologies | AI-Driven Automation & IT Solutions</title>
+  <meta name="description" content="CloudYantra Technologies – AI-driven automation and IT solutions specializing in chatbots, app development, workflow automation, WordPress websites, SEO, and digital marketing. Empowering startups and enterprises across India and globally." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <img src="logo.jpeg" alt="CloudYantra Technologies" class="logo-img" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#why-us" class="nav-link">Why Us</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary nav-cta">Get Started</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="particles" id="particles"></div>
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
+    <div class="container hero-grid">
+      <div class="hero-text-side">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          AI-Driven Innovation for the Future
+        </div>
+        <h1 class="hero-title">
+          Powering Businesses with<br />
+          <span class="gradient-text">Intelligent Technology</span>
+        </h1>
+        <p class="hero-subtitle">
+          CloudYantra Technologies delivers cutting-edge AI automation, scalable app development, and digital growth strategies—helping startups and enterprises in India and globally accelerate their transformation journey.
+        </p>
+        <div class="hero-actions">
+          <a href="#services" class="btn btn-primary btn-lg">
+            <i class="fas fa-rocket"></i> Explore Services
+          </a>
+          <a href="#contact" class="btn btn-outline btn-lg">
+            <i class="fas fa-phone-alt"></i> Let's Talk
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-visual-side">
+        <div class="hero-dashboard">
+          <div class="dashboard-header">
+            <div class="dashboard-controls">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="dashboard-title"><i class="fas fa-network-wired"></i> workflow_engine.py</div>
+            <div class="dashboard-status"><span class="status-pulse"></span> Active</div>
+          </div>
+          <div class="dashboard-body">
+            <div class="flow-container">
+              <div class="flow-node" data-node="1">
+                <div class="node-icon"><i class="fas fa-envelope-open-text"></i></div>
+                <div class="node-info">
+                  <h4>New Lead Info</h4>
+                  <span class="node-status text-green">Triggered</span>
+                </div>
+              </div>
+              <div class="flow-line"><span class="line-progress"></span></div>
+              <div class="flow-node active" data-node="2">
+                <div class="node-icon"><i class="fas fa-brain"></i></div>
+                <div class="node-info">
+                  <h4>AI Agent NLP</h4>
+                  <span class="node-status text-orange">Thinking...</span>
+                </div>
+              </div>
+              <div class="flow-line"><span class="line-progress"></span></div>
+              <div class="flow-node" data-node="3">
+                <div class="node-icon"><i class="fab fa-whatsapp"></i></div>
+                <div class="node-info">
+                  <h4>WhatsApp Sent</h4>
+                  <span class="node-status text-muted">Pending</span>
+                </div>
+              </div>
+            </div>
+            <div class="dashboard-charts">
+              <div class="chart-card">
+                <div class="chart-header">
+                  <span>Chatbot Conversations</span>
+                  <span class="trend-indicator up"><i class="fas fa-arrow-trend-up"></i> +18.4%</span>
+                </div>
+                <div class="chart-value" id="chatConversationsCount">1,482</div>
+                <div class="chart-bar-container">
+                  <div class="chart-bar" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="chart-card">
+                <div class="chart-header">
+                  <span>Tasks Automated</span>
+                  <span class="trend-indicator up"><i class="fas fa-arrow-trend-up"></i> +42.1%</span>
+                </div>
+                <div class="chart-value" id="automatedTasksCount">28,940</div>
+                <div class="chart-bar-container">
+                  <div class="chart-bar accent" style="width: 88%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container hero-stats-wrapper">
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="150">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Clients Served</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="300">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="98">0</span><span class="stat-plus">%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-card-wrapper">
+            <div class="about-card main-card">
+              <i class="fas fa-brain about-card-icon"></i>
+              <h3>AI at the Core</h3>
+              <p>Every solution we build is powered by intelligent automation and data-driven insights.</p>
+            </div>
+            <div class="about-card side-card card-top">
+              <i class="fas fa-globe accent-icon"></i>
+              <span>Global Reach</span>
+            </div>
+            <div class="about-card side-card card-bottom">
+              <i class="fas fa-shield-alt accent-icon"></i>
+              <span>Enterprise Grade</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="section-tag">About Us</div>
+          <h2 class="section-title">We Are the Bridge Between <span class="gradient-text">Technology & Growth</span></h2>
+          <p class="about-desc">CloudYantra Technologies is an AI-driven automation and IT solutions company that transforms how businesses operate. We specialize in building scalable digital products, streamlining operations, and accelerating growth through intelligent, cloud-powered solutions.</p>
+          <p class="about-desc">From startups taking their first digital steps to enterprises seeking operational excellence, we tailor our expertise—spanning chatbots, app development, workflow automation, WordPress, SEO, and digital marketing—to deliver measurable results.</p>
+          <div class="about-features">
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Tailored solutions for every business size</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Agile delivery with transparent communication</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>End-to-end support from concept to launch</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Expertise across India, US, UK & global markets</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Work With Us <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">What We Do</div>
+        <h2 class="section-title">Our <span class="gradient-text">Core Services</span></h2>
+        <p class="section-subtitle">Comprehensive technology solutions designed to transform your business operations and accelerate growth.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card" data-delay="0">
+          <div class="service-icon-wrap">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h3>AI Chatbots</h3>
+          <p>Intelligent conversational agents that engage customers 24/7, automate support, and drive conversions across WhatsApp, websites, and apps.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-dot-circle"></i> NLP-powered conversations</li>
+            <li><i class="fas fa-dot-circle"></i> Multi-platform integration</li>
+            <li><i class="fas fa-dot-circle"></i> CRM & payment connectivity</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+
+        <div class="service-card" data-delay="100">
+          <div class="service-icon-wrap">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>App Development</h3>
+          <p>Scalable, high-performance web and mobile applications built with modern tech stacks that delight users and power business logic.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-dot-circle"></i> React, Flutter & Node.js</li>
+            <li><i class="fas fa-dot-circle"></i> iOS & Android native apps</li>
+            <li><i class="fas fa-dot-circle"></i> Cloud-native architecture</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+
+        <div class="service-card featured" data-delay="200">
+          <div class="featured-badge">Most Popular</div>
+          <div class="service-icon-wrap">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h3>Workflow Automation</h3>
+          <p>Eliminate repetitive tasks and bottlenecks with intelligent workflow automation—connecting your tools, teams, and data seamlessly.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-dot-circle"></i> Zapier, Make & n8n flows</li>
+            <li><i class="fas fa-dot-circle"></i> ERP & CRM integration</li>
+            <li><i class="fas fa-dot-circle"></i> Custom API automation</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+
+        <div class="service-card" data-delay="0">
+          <div class="service-icon-wrap">
+            <i class="fab fa-wordpress"></i>
+          </div>
+          <h3>WordPress Websites</h3>
+          <p>Fast, SEO-optimized, and visually stunning WordPress websites and e-commerce stores crafted to convert visitors into customers.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-dot-circle"></i> Custom theme development</li>
+            <li><i class="fas fa-dot-circle"></i> WooCommerce integration</li>
+            <li><i class="fas fa-dot-circle"></i> Performance optimization</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+
+        <div class="service-card" data-delay="100">
+          <div class="service-icon-wrap">
+            <i class="fas fa-search"></i>
+          </div>
+          <h3>SEO & Content</h3>
+          <p>Data-driven SEO strategies, keyword research, and content marketing that build organic authority and bring qualified traffic to your business.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-dot-circle"></i> Technical SEO audits</li>
+            <li><i class="fas fa-dot-circle"></i> On-page & off-page SEO</li>
+            <li><i class="fas fa-dot-circle"></i> Content strategy & blogging</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+
+        <div class="service-card" data-delay="200">
+          <div class="service-icon-wrap">
+            <i class="fas fa-bullhorn"></i>
+          </div>
+          <h3>Digital Marketing</h3>
+          <p>Full-funnel digital marketing campaigns—from Google Ads and Meta to email marketing—that drive ROI and measurable business growth.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-dot-circle"></i> PPC & paid social ads</li>
+            <li><i class="fas fa-dot-circle"></i> Email & WhatsApp marketing</li>
+            <li><i class="fas fa-dot-circle"></i> Analytics & reporting</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY US ========== -->
+  <section class="section why-us" id="why-us">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Why CloudYantra</div>
+        <h2 class="section-title">The <span class="gradient-text">CloudYantra Advantage</span></h2>
+        <p class="section-subtitle">We don't just deliver projects — we build lasting partnerships that drive continuous business growth.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-bolt"></i></div>
+          <h3>Rapid Delivery</h3>
+          <p>Agile sprints and lean processes ensure your product goes live faster without compromising quality.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-cubes"></i></div>
+          <h3>Scalable Architecture</h3>
+          <p>Every solution is built cloud-native, designed to scale seamlessly as your business grows.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-headset"></i></div>
+          <h3>Dedicated Support</h3>
+          <p>Round-the-clock technical support, transparent communication, and proactive issue resolution.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-rupee-sign"></i></div>
+          <h3>Cost-Efficient</h3>
+          <p>Premium-quality solutions at competitive pricing—maximizing your ROI without hidden costs.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-lock"></i></div>
+          <h3>Secure & Compliant</h3>
+          <p>Enterprise-grade security practices, GDPR compliance, and data protection built into every project.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Data-Driven Results</h3>
+          <p>Analytics-backed decisions and measurable KPIs so you always know the value we're delivering.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROCESS ========== -->
+  <section class="section process">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">How We Work</div>
+        <h2 class="section-title">Our Simple <span class="gradient-text">4-Step Process</span></h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Discovery</h3>
+            <p>We deeply understand your business goals, challenges, and target audience through collaborative workshops.</p>
+          </div>
+        </div>
+        <div class="process-connector"><i class="fas fa-chevron-right"></i></div>
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Strategy</h3>
+            <p>Our experts craft a tailored technology roadmap with clear milestones, timelines, and deliverables.</p>
+          </div>
+        </div>
+        <div class="process-connector"><i class="fas fa-chevron-right"></i></div>
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Build</h3>
+            <p>Agile development with regular demos and feedback loops ensure the product matches your vision perfectly.</p>
+          </div>
+        </div>
+        <div class="process-connector"><i class="fas fa-chevron-right"></i></div>
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h3>Launch & Grow</h3>
+            <p>Post-launch support, performance monitoring, and continuous optimization to maximize your success.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Client Stories</div>
+        <h2 class="section-title">What Our <span class="gradient-text">Clients Say</span></h2>
+      </div>
+      <div class="testimonials-slider" id="testimonialsSlider">
+        <div class="testimonial-card active">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p class="testimonial-text">"CloudYantra helped Wandernox launch a fully automated lead pipeline in weeks. Their AI automation now captures and qualifies every inquiry seamlessly."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar"><i class="fas fa-user"></i></div>
+            <div class="author-info">
+              <h4>Wandernox</h4>
+              <span>Travel Services</span>
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p class="testimonial-text">"Asia Way Holidays saw engagement grow instantly after CloudYantra built our conversational booking assistant. The process is faster, smarter, and more reliable than ever."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar"><i class="fas fa-user"></i></div>
+            <div class="author-info">
+              <h4>Asia Way Holidays</h4>
+              <span>Tourism & Travel</span>
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p class="testimonial-text">"Fahmidha Enterprises now handles customer inquiries through automated workflows with flawless accuracy. CloudYantra made our operations faster and more dependable."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar"><i class="fas fa-user"></i></div>
+            <div class="author-info">
+              <h4>Fahmidha Enterprises</h4>
+              <span>Business Services</span>
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-controls">
+        <button class="t-btn t-prev" id="tPrev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+        <div class="t-dots" id="tDots"></div>
+        <button class="t-btn t-next" id="tNext" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Get In Touch</div>
+        <h2 class="section-title">Let's Build Something <span class="gradient-text">Amazing Together</span></h2>
+        <p class="section-subtitle">Tell us about your project and we'll get back to you within 24 hours.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <span class="contact-label">Email Us</span>
+              <a href="mailto:cloudyantratechnologies@gmail.com">cloudyantratechnologies@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <span class="contact-label">Call Us</span>
+              <a href="tel:+917975090253">+91-7975090253</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <span class="contact-label">Alternate Phone</span>
+              <a href="tel:+918617032702">+91-8617032702</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <span class="contact-label">WhatsApp</span>
+              <a href="https://wa.me/7975090253" target="_blank">Chat on WhatsApp</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <span class="contact-label">Location</span>
+              <span>India (Serving Globally)</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div id="formSuccess" class="form-success hidden">
+              <i class="fas fa-check-circle"></i>
+              <h3>Message Sent!</h3>
+              <p>Thank you! We'll get back to you within 24 hours.</p>
+            </div>
+            <div id="formContent">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name <span>*</span></label>
+                  <input type="text" id="name" name="name" placeholder="Your full name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address <span>*</span></label>
+                  <input type="email" id="email" name="email" placeholder="your@email.com" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" />
+                </div>
+                <div class="form-group">
+                  <label for="company">Company / Startup</label>
+                  <input type="text" id="company" name="company" placeholder="Your company name" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="service">Service Interested In <span>*</span></label>
+                <select id="service" name="service" required>
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="AI Chatbots">AI Chatbots</option>
+                  <option value="App Development">App Development</option>
+                  <option value="Workflow Automation">Workflow Automation</option>
+                  <option value="WordPress Websites">WordPress Websites</option>
+                  <option value="SEO & Content">SEO & Content</option>
+                  <option value="Digital Marketing">Digital Marketing</option>
+                  <option value="Multiple Services">Multiple Services</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message <span>*</span></label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us about your project, requirements, or any questions..." required></textarea>
+              </div>
+              <div id="formError" class="form-error hidden">
+                <i class="fas fa-exclamation-circle"></i> <span id="formErrorMsg"></span>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                <span id="btnText"><i class="fas fa-paper-plane"></i> Send Message</span>
+                <span id="btnLoading" class="hidden"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <img src="logo.jpeg" alt="CloudYantra Technologies" class="logo-img" />
+          </a>
+          <p>AI-driven automation and IT solutions empowering startups and enterprises across India and globally.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">AI Chatbots</a></li>
+            <li><a href="#services">App Development</a></li>
+            <li><a href="#services">Workflow Automation</a></li>
+            <li><a href="#services">WordPress Websites</a></li>
+            <li><a href="#services">SEO & Content</a></li>
+            <li><a href="#services">Digital Marketing</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#why-us">Why CloudYantra</a></li>
+            <li><a href="#testimonials">Client Stories</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:cloudyantratechnologies@gmail.com"><i class="fas fa-envelope"></i> cloudyantratechnologies@gmail.com</a></li>
+            <li><a href="tel:+917975090253"><i class="fas fa-phone"></i> +91-7975090253</a></li>
+            <li><a href="https://wa.me/917975090253" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+            <li><span><i class="fas fa-map-marker-alt"></i> India (Serving Globally)</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 CloudYantra Technologies. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
